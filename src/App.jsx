@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import './App.css'
+import General from './components/left/General'
+
 
 function App() {
   return (
     <>
-      <h1>hi</h1>
+     <General/>
     </>
   )
 }
