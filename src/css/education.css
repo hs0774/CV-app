@@ -1,0 +1,15 @@
+.skills form label,
+.skills form input,
+.skills form button {
+  display: block;
+margin-bottom: 5px;
+}
+
+.skills {
+    width: 50%;
+    color: whitesmoke;
+}
+.submitEdit{
+    display: flex;
+    gap: 16px;
+  } 

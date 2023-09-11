@@ -1,0 +1,53 @@
+.general,.education,.experience{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.general{
+    background-color: rgb(150, 150, 150);
+    color: whitesmoke;
+    
+}
+
+.experienceDiv,.educationDiv{
+    margin-top: 30px;
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    height: 65px;
+    align-items: center;
+    color: whitesmoke;
+}
+
+.generalInfo{
+    gap: 18px;
+    display: flex;
+}
+.generalInfo > div {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.educationInfo{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.leftInfo{
+    display: flex;
+    flex-direction: column;
+} 
+
+.rightInfo{
+    display: flex;
+    flex-direction: column;
+}
+.leftEdu p{
+    margin: 0;
+}
+.rightEdu p{
+    margin:0;
+}

@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import "../../css/education.css"
 
 function Education({onSubmitEducation, DisplayEducationData}){
 
@@ -51,8 +52,9 @@ function Education({onSubmitEducation, DisplayEducationData}){
 
             <label htmlFor="degree">Degree: </label>
             <input type="text" name='degree' value={education.degree}  onChange ={handleChange} />
-            <button>Submit</button>
-            <button onClick={handleClick} type='button'>Edit</button>
+            <div className="submitEdit"><button>Submit</button>
+            <button onClick={handleClick} type='button'>Edit</button></div>
+            
          </form>
         </div>
 

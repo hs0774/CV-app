@@ -37,7 +37,7 @@ function Experience({onSubmitExperience, DisplayExperienceData}){
     return (
         <div className="skills">
             <form onSubmit={handleSubmit}>
-            <h2>Work Experience </h2>
+            <h2>Experience</h2>
                 <label htmlFor="company"> Institution Name: </label>
                 <input type="text" name='company' value={experience.company} onChange ={handleChange} />
 
@@ -53,9 +53,15 @@ function Experience({onSubmitExperience, DisplayExperienceData}){
                 <label htmlFor="location">Location: </label>
                 <input type="text" name='location' value={experience.location} onChange ={handleChange} />
 
-                <textarea htmlFor="description" type="text" name='description' value={experience.description}  onChange ={handleChange} placeholder="Describe your job" />
-                <button>Submit</button>
-                <button onClick={handleClick} type='button'>Edit</button>
+                <label htmlFor="description">Description: </label>
+                <textarea htmlFor="description" type="text" name='description' 
+                value={experience.description}  onChange ={handleChange}
+                placeholder="Describe your job" /> 
+
+                <div className="submitEdit">
+                    <button>Submit</button>
+                    <button onClick={handleClick} type='button'>Edit</button>
+                </div>
             </form>
         </div>
 

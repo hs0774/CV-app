@@ -10,7 +10,6 @@ function App() {
   const [showDisplay, setShowDisplay] = useState(false);
   const [generalData, setGeneralData] = useState({
     first: "",
-    last: "",
     email: "",
     phone: "",
   });
@@ -47,12 +46,16 @@ function App() {
     setShowDisplay(true);
   };
   return (
-    <>
+    <div className='container'>
+    <div className='left'>
       <General onSubmit={handleSubmit} DisplayData={generalData}/>
       <Education onSubmitEducation={onSubmitEducation} DisplayEducationData={educationData} /> 
       <Experience onSubmitExperience={onSubmitExperience} DisplayExperienceData={experienceData} />
+      </div>
+      <div className='right'>
       {showDisplay && <Display general={generalData} experience={experienceData} education={educationData} />}
-    </>
+      </div>
+    </div>
   );
 }
 
